@@ -20,17 +20,10 @@ function City() {
 
   const cityId = useParams().id;
 
-  const [searchParams, setSearchParams] = useSearchParams();
-
-  const lat = searchParams.get("lat");
-  const lng = searchParams.get("lng");
-
   const { cityName, emoji, date, notes } = currentCity;
 
   return (
-    <h1>
-      CITY {cityId} , {lat}, {lng}{" "}
-    </h1>
+    <h1>CITY {cityId}</h1>
     // <div className={styles.city}>
     //   <div className={styles.row}>
     //     <h6>City name</h6>
