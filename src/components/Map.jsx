@@ -1,11 +1,17 @@
 import React from "react";
 import styles from "./Map.module.css";
+import { useSearchParams } from "react-router-dom";
 
 function Map() {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const lat = searchParams.get("lat");
+  const lng = searchParams.get("lng");
+
   return (
     <div className={styles.mapContainer}>
-      Map Component
-      <p>Map will be displayed here</p>
+      <h1>Map Component</h1>
+
+      <h1>Position: {`lat: ${lat}, lng: ${lng}`}</h1>
     </div>
   );
 }
