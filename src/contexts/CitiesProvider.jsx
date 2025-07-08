@@ -44,9 +44,37 @@ function CitiesProvider({ children }) {
         }
     }
 
+    async function createCity(newCity) {
+        setIsLoading(true);
+        try {
+            const response = await fetch(`${BASE_URL}/cities`, {
+                method: "POST",
+                body: JSON.stringify(newCity),
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            });
+            if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }
+            const data = await response.json();
+            setCities((cities) => [...cities, data]);
+        } catch (error) {
+            console.error("Failed to fetch city by ID:", error);
+        } finally {
+            setIsLoading(false);
+        }
+    }
+
     return (
         <CitiesContext.Provider
-            value={{ cities, isLoading, currentCity, fetchCitiesById }}
+            value={{
+                cities,
+                isLoading,
+                currentCity,
+                fetchCitiesById,
+                createCity,
+            }}
         >
             {children}
         </CitiesContext.Provider>
