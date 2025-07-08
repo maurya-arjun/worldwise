@@ -49,54 +49,6 @@
       }
     },
     {
-      "id": "3e8a",
-      "cityName": "Visnagar",
-      "country": "India",
-      "emoji": "🇮🇳",
-      "date": "2025-07-08T01:48:00.601Z",
-      "notes": "Welcome to Gujarat",
-      "position": {
-        "lat": "23.624394569716923",
-        "lng": "72.45483398437501"
-      }
-    },
-    {
-      "id": "758d",
-      "cityName": "Patan",
-      "country": "India",
-      "emoji": "🇮🇳",
-      "date": "2025-07-08T01:48:00.601Z",
-      "notes": "Welcome to Gujarat",
-      "position": {
-        "lat": "23.815500848699667",
-        "lng": "72.15820312500001"
-      }
-    },
-    {
-      "id": "c807",
-      "cityName": "Mahesana",
-      "country": "India",
-      "emoji": "🇮🇳",
-      "date": "2025-07-08T01:53:17.589Z",
-      "notes": "",
-      "position": {
-        "lat": "23.58412603264412",
-        "lng": "72.42187500000001"
-      }
-    },
-    {
-      "id": "5d7d",
-      "cityName": "Dadri",
-      "country": "India",
-      "emoji": "🇮🇳",
-      "date": "2025-07-08T01:54:53.511Z",
-      "notes": "",
-      "position": {
-        "lat": "28.613459424004414",
-        "lng": "77.51953125000001"
-      }
-    },
-    {
       "id": "2503",
       "cityName": "Madi",
       "country": "Nepal",
@@ -106,18 +58,6 @@
       "position": {
         "lat": "28.420391085674304",
         "lng": "84.06738281250001"
-      }
-    },
-    {
-      "id": "9152",
-      "cityName": "Merta",
-      "country": "India",
-      "emoji": "🇮🇳",
-      "date": "2025-07-08T01:57:41.695Z",
-      "notes": "RJ",
-      "position": {
-        "lat": "26.78484736105119",
-        "lng": "73.87207031250001"
       }
     }
   ]

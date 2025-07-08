@@ -60,7 +60,25 @@ function CitiesProvider({ children }) {
             const data = await response.json();
             setCities((cities) => [...cities, data]);
         } catch (error) {
-            console.error("Failed to fetch city by ID:", error);
+            console.error("Failed to creating city:", error);
+        } finally {
+            setIsLoading(false);
+        }
+    }
+
+    async function deleteCity(id) {
+        setIsLoading(true);
+        try {
+            const response = await fetch(`${BASE_URL}/cities/${id}`, {
+                method: "DELETE",
+            });
+            if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }
+
+            setCities((cities) => cities.filter((city) => city.id !== id));
+        } catch (error) {
+            console.error("Failed to deleting city by ID:", error);
         } finally {
             setIsLoading(false);
         }
@@ -74,6 +92,7 @@ function CitiesProvider({ children }) {
                 currentCity,
                 fetchCitiesById,
                 createCity,
+                deleteCity,
             }}
         >
             {children}
