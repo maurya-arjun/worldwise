@@ -8,7 +8,7 @@ import BackButton from "./BackButton";
 import { useUrlPosition } from "../hooks/useUrlPosition";
 import Message from "./Message";
 import Spinner from "./Spinner";
-import useCities from "../contexts/useCities";
+import useCities from "../hooks/useCities";
 import { useNavigate } from "react-router-dom";
 import { convertToEmoji } from "../utils";
 
