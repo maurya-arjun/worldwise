@@ -49,15 +49,15 @@
       }
     },
     {
-      "id": "2503",
-      "cityName": "Madi",
-      "country": "Nepal",
-      "emoji": "🇳🇵",
-      "date": "2025-07-08T01:55:48.300Z",
-      "notes": "Nepal",
+      "id": "afa3",
+      "cityName": "Neuvy-Saint-Sepulchre",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2025-07-09T00:58:33.878Z",
+      "notes": "Welcome to france.",
       "position": {
-        "lat": "28.420391085674304",
-        "lng": "84.06738281250001"
+        "lat": "46.604167162931844",
+        "lng": "1.7578125000000002"
       }
     }
   ]
