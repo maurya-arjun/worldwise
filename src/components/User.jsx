@@ -1,22 +1,15 @@
 import { useNavigate } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 import styles from "./User.module.css";
-import { useEffect } from "react";
 
 function User() {
-    const { user, logout, isAuthenticated } = useAuth();
+    const { user, logout } = useAuth();
     const Navigate = useNavigate();
-
-    useEffect(() => {
-        if (!isAuthenticated) Navigate("/");
-    }, [isAuthenticated, Navigate]);
 
     function handleClick() {
         logout();
         Navigate("/");
     }
-
-    if (!user) return;
 
     return (
         <div className={styles.user}>
