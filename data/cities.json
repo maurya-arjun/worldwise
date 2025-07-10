@@ -49,15 +49,15 @@
       }
     },
     {
-      "id": "afa3",
-      "cityName": "Neuvy-Saint-Sepulchre",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2025-07-09T00:58:33.878Z",
-      "notes": "Welcome to france.",
+      "id": "570d",
+      "cityName": "Estepar",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2025-07-09T02:27:10.583Z",
+      "notes": "",
       "position": {
-        "lat": "46.604167162931844",
-        "lng": "1.7578125000000002"
+        "lat": "42.342305278572816",
+        "lng": "-3.8891601562500004"
       }
     }
   ]

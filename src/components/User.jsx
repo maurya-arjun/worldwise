@@ -1,24 +1,30 @@
+import { useNavigate } from "react-router-dom";
+import useAuth from "../hooks/useAuth";
 import styles from "./User.module.css";
-
-const FAKE_USER = {
-  name: "Jack",
-  email: "jack@example.com",
-  password: "qwerty",
-  avatar: "https://i.pravatar.cc/100?u=zz",
-};
+import { useEffect } from "react";
 
 function User() {
-  const user = FAKE_USER;
+    const { user, logout, isAuthenticated } = useAuth();
+    const Navigate = useNavigate();
 
-  function handleClick() {}
+    useEffect(() => {
+        if (!isAuthenticated) Navigate("/");
+    }, [isAuthenticated, Navigate]);
 
-  return (
-    <div className={styles.user}>
-      <img src={user.avatar} alt={user.name} />
-      <span>Welcome, {user.name}</span>
-      <button onClick={handleClick}>Logout</button>
-    </div>
-  );
+    function handleClick() {
+        logout();
+        Navigate("/");
+    }
+
+    if (!user) return;
+
+    return (
+        <div className={styles.user}>
+            <img src={user.avatar} alt={user.name} />
+            <span>Welcome, {user.name}</span>
+            <button onClick={handleClick}>Logout</button>
+        </div>
+    );
 }
 
 export default User;
