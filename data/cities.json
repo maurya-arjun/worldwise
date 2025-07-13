@@ -59,6 +59,18 @@
         "lat": "42.342305278572816",
         "lng": "-3.8891601562500004"
       }
+    },
+    {
+      "id": "c09c",
+      "cityName": "Robertsganj",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2025-07-13T04:00:31.070Z",
+      "notes": "Welcome to robertsganj",
+      "position": {
+        "lat": "24.449962432775322",
+        "lng": "83.04496765136719"
+      }
     }
   ]
 }
